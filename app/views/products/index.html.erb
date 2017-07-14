@@ -1,5 +1,7 @@
 <h3>Products</h3>
+<div id="testing">
 
+</div>
 <div class="row">
   <div class="section">
   <% @products.each do |product| %>
@@ -9,7 +11,7 @@
       <p><%= number_to_currency product.price %></p>
       <%= form_for @order_item, remote: true do |f| %>
         <%= f.hidden_field :product_id, value: product.id %>
-        <%= f.number_field :quantity, id: 'order_item_button', placeholder: "Oops, breaks if you don't add input!", :min => 0, remote: true %>
+        <%= f.number_field :quantity, placeholder: "Oops, breaks if you don't add input!", :min => 0 %>
         <span class="waves-effect waves-light btn"><%= f.submit "Add to cart" %></span>
       <% end %>
     </div>
