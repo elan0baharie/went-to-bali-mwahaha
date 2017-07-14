@@ -1,0 +1,6 @@
+if ('<%= params["hide_link"] %>') {
+  $('#to-remove<%= @product.id %>').remove();
+  $('#product_link<%= @product.id %>').show()
+} else {
+  $('#product_link<%= @product.id %>').hide().after('<%= j render("show")  %>')
+};

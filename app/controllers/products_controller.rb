@@ -10,6 +10,14 @@ class ProductsController < ApplicationController
     @product = Product.new
   end
 
+  def show
+    @product = Product.find(params['show_id'])
+    respond_to do |format|
+      format.html { redirect_to }
+      format.js
+    end
+  end
+
   def create
     @product = Product.new(product_params)
     if @product.save

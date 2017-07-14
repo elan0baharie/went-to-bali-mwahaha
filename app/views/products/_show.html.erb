@@ -1,0 +1,7 @@
+<div id="to-remove<%= @product.id %>">
+  <h4><%= link_to @product.name, product_path(@product, :hide_link => "true", :show_id => @product.id), id: "hide-show#{@product.id}", remote: true %></h4>
+  <p>
+    <%= image_tag("smile.jpg", size: '80') %>
+  </p>
+  <h6><%= @product.description %></h6>
+</div>
