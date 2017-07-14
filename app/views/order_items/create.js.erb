@@ -1,5 +1,2 @@
-
-$('#new_order_item').submit(function(){
-  console.log("clickin");
-
-})
+<% puts @item %>
+$('#order_items_div').append('<%= j render(@order_item) %>');

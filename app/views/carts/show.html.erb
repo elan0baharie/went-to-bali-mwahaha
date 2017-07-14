@@ -5,7 +5,6 @@
     <div id="order_items_div">
 
     </div>
-
   <% end %>
   <p>Your Total: <%= number_to_currency current_order.total_price %></p>
   <p><%= link_to "Finalize order", finalize_path %></p>
@@ -13,7 +12,7 @@
   <p>Your shopping cart is empty.</p>
 <% end %>
 <div id="testing">
-  
+
 </div>
 <% if @previous_orders %>
   <h3>Your order history:</h3>
