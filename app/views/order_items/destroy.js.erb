@@ -1,0 +1,5 @@
+$('#order_items_div<%= @item.id %>').remove();
+$('#cart-summary').remove();
+$('#nav-mobile').prepend('<li id="cart-summary"><%= link_to "Cart | Total items: #{ cart_items }", cart_path %></li>');
+$('#total-price').remove();
+$('#price-div').prepend('<p id="total-price">Your Total: <%= number_to_currency current_order.total_price %></p>');
