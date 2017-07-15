@@ -1,9 +1,37 @@
-# README
+# _E-Commerce Site Refactor_
 
-E-commerce site. Uses `bcrypt` and `materialize`. There's a seed file. Set up your own admin. If you have questions, I'll be in Bali with no email. Ask someone else.
+#### _Adding some user functionality to an existing site, 07.14.2017_
 
-To set up:
+#### By _**E. Baharie**_
 
-* `rake db:setup`
+## Description
 
-* Sorry, didn't get around to tests. It mostly works. There might be a few bugs.
+_The site was started but needs basic e-commerce site functions added. The client would like to see the cart info updated as the user browses. After this is done. There is a list of functions to address with testing for the features. _
+
+## Setup/Installation Requirements
+
+* _Use a CLI to - git clone https://github.com/elan0baharie/went-to-bali-mwahaha to desktop_
+* _cd into /went-to-bali-mwahaha_
+* _Run bundle install_
+* _Start postgres_
+* _Run rails db:create db:migrate _
+* _Run rails db:seed _
+* _Run rails s _
+* _From the browser localhost:3000 _
+
+## Known Bugs
+_ _
+
+## Support and contact details
+
+_E. Baharie email: 0elan1@gmail.com github: https://github.com/elan0baharie/went-to-bali-mwahaha_
+
+## Technologies Used
+
+_Ruby on Rails, Materialize, JQuery, Postgres_
+
+### License
+
+*MIT License*
+
+Copyright (c) 2016 **_E. Baharie_**
