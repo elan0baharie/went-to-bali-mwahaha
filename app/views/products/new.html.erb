@@ -1,12 +1,14 @@
-<h1>Add a product.</h1>
+<% if current_user && current_user.admin %>
+  <h1>Add a product.</h1>
 
-  <%= form_for @product do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-    <%= f.label :description %>
-    <%= f.text_field :description %>
-    <%= f.label :price %>
-    <%= f.number_field :price, :step => 0.01, :min => 0 %>
-  <%= f.submit "Submit" %>
+    <%= form_for @product do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+      <%= f.label :description %>
+      <%= f.text_field :description %>
+      <%= f.label :price %>
+      <%= f.number_field :price, :step => 0.01, :min => 0 %>
+    <%= f.submit "Submit" %>
 
+  <% end %>
 <% end %>
