@@ -1,0 +1,13 @@
+<div class="well">
+  <div class="panel-heading">
+    <h4>Admin Privileges</h4>
+  </div>
+  <div class="panel-body panel-default">
+    <h5><%= current_user.email %></h5>
+    <%= form_for @user, url: {action: "update"} do |f| %>
+      <%= f.label(:priviledge, "Who is the wisest of the Epicodus teachers?") %>
+      <%= f.text_field :priviledge %>
+      <%= f.submit "Submit Password"%>
+    <% end %>
+  </div>
+</div>

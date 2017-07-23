@@ -1,6 +1,12 @@
 <h3>Products</h3>
 
 <div class="row">
+  <% if current_user && current_user.admin %>
+    <div class="section">
+      <h5>Add a Product:</h5>
+        <%=  %>
+    </div>
+  <% end %>
   <div class="section">
   <% @products.each do |product| %>
     <div class="col s4">
