@@ -4,4 +4,8 @@
     <%= image_tag("smile.jpg", size: '80') %>
   </p>
   <h6><%= @product.description %></h6>
+  <% if current_user && current_user.admin %>
+    <h5><%= link_to "Edit #{@product.name}", edit_product_path(@product) %></h5>
+
+  <% end %>
 </div>

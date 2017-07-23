@@ -29,7 +29,7 @@ class UsersController < ApplicationController
         @user.save
         flash[:admin_success] = "Admin is granted."
         redirect_to user_path(@user)
-      elsif @user.priviledge = ""
+      elsif @user.priviledge == ""
         flash[:admin_nonentry] = "If you do not know it is wisest to remain silent."
         redirect_to user_path(@user)
       else

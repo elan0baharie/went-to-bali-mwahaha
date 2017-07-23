@@ -6,7 +6,18 @@
 
 ## Description
 
-_The site was started but needs basic e-commerce site functions added. The client would like to see the cart info updated as the user browses. After this is done. There is a list of functions to address with testing for the features. _
+_The site was started but needs basic e-commerce site functions added. The client would like to see the cart info updated as the user browses. After this is done. There is a list of functions to address with testing for the features._
+
+## Added Featuress
+
+* _No negative orders can be submitted on products index path_
+* _Flash messages for successfully signing up, out, and in_
+* _Flash messages for product addition, updates, and destruction_
+* _Admin functionality added under User Account link. Must enter "Loren" for question. Case Sensitive_
+* _Only admins can access link to create, edit, & delete products_
+* _Products validate input_
+* _Products can have decimal input upon creation now_
+
 
 ## Setup/Installation Requirements
 
@@ -14,10 +25,10 @@ _The site was started but needs basic e-commerce site functions added. The clien
 * _cd into /went-to-bali-mwahaha_
 * _Run bundle install_
 * _Start postgres_
-* _Run rails db:create db:migrate _
-* _Run rails db:seed _
-* _Run rails s _
-* _From the browser localhost:3000 _
+* _Run rails db:create db:migrate_
+* _Run rails db:seed_
+* _Run rails s_
+* _From the browser localhost:3000_
 
 ## Known Bugs
 _ _
